@@ -1,0 +1,4 @@
+CREATE TABLE attendance(
+    id BIGSERIAL PRIMARY KEY,
+    date TIMESTAMP NOT NULL,
+    user_id BIGINT NOT NULL REFERENCES user(id));
